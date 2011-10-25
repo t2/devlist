@@ -1,0 +1,6 @@
+<h1>Devli.st</h1>
+<% @tweets.each do |t| %>
+	<p>
+		<%="#{t.from_user}: #{t.text}"%>
+	</p>
+<% end %>
