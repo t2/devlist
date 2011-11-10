@@ -1,6 +1,8 @@
-<h1>Devli.st</h1>
-<% @tweets.each do |t| %>
-	<p>
-		<%="#{t.from_user}: #{t.text}"%>
-	</p>
+<h1>devli.st</h1>
+<div id="container" style="width: 600px; margin:auto;">
+<% @tweets.each do |list_item| %>
+	<div class="tweet">
+		<%= render :partial => "shared/list_item", :locals => {:list_item => list_item} %>
+	</div>
 <% end %>
+</div>
